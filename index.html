@@ -3,449 +3,305 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>CSS Examples</title>
-    <style>
+    <title>JS Practise</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Monoton|Orbitron|Poiret+One" rel="stylesheet">
+    <style media="screen">
     body
     {
-      background: -webkit-linear-gradient(left,rgba(255, 0, 0,0),rgba(255, 0, 0,1));
-      background: -moz-radial-gradient(circle,rgba(255, 0, 0,1),rgba(255, 0, 0,0));
-      padding: 15px;
-    z-index: 1;
+      overflow: hidden;
     }
-    #img
-    {
-      border-radius: 30px 30px 30px 30px;
-      display: block;
-      margin: auto;
-      width: 50%;
-      transition: width 2s  ,height 2s ,-webkit-transform 2s ;
-    }
-    @-webkit-keyframes myanim {
-      0%{ background-color: red;left: 0px;top:0px;}
-      25%{ background-color: green;left: 200px;top:0px;}
-      50%{ background-color: blue;left: 200px;top:200px;}
-      75%{ background-color: black;left: 0px;top:200px;}
-      100%{ background-color: red;left: 0px;top:0px;}
-    }
-    table,th,td
-    {
-      border: 2px solid black;
-      border-collapse: collapse;
-    }
-    #borderimg
-    {
-      border: 10px solid transparent;
-      padding: 10px;
-      -moz-border-image:url(border.png) 50 round;
-      -webkit-border-image:url(border.png) 30 stretch;
-    }
-    p~p
-    {
-      background-color: red;
-    }
-      div.container
+      .pages
       {
-        margin-left:100px;
-        background-color: powderblue;
-        border: 2px dashed black;
-      }
-      p.child
-      {
-        margin-left: inherit;
-        border: 2px double black;
-        text-align: justify;
-        text-decoration: none;
+        z-index: -1;
+        width: 100;
+        height: 5000px;
 
-      }
-      img:hover
-      {
-        -webkit-transform:scale(1.5, 1.5);
-      }
-      #img:hover
-      {
-        transform: rotate(180deg);
-        width: 20%;
-      }
-      div.ridge
-      {
-        margin-left:100px;
-        background-color: lightgreen;
-        outline-style: ridge;;
-      }
-
-      div.double
-      {
-        font-family: myFont;
-        margin-left:100px;
-        background-color: linen;
-        outline-style: double;
-      }
-      div.dotted
-      {
-        margin-left:100px;
-        background-color: navy;
-        outline-style: dotted;
-      }
-      .hide
-      {
-        display: none;
-      }
-      div.inset
-      {
-        margin-left:100px;
-        background-color: lime;
-        outline-style: inset;
-      }
-      tr:hover
-      {
-        background-color: white;
-      }
-
-
-      tr:nth-child(odd)
-      {
-        background-color: gray;
-      }
-
-            tr:nth-child(even)
-            {
-              background-color: white;
-            }
-      td:hover
-      {
-        background-color: lime;
-      }
-      .dropbtn
-      {
-        box-shadow: 0 6px grey;
-        color: white;
-        padding: 8px;
-        font-size: 16px;
-        cursor: pointer;
-        border: none;
-        background-color: black;
-        }
-        .dropbtn1
-        {
-          box-shadow: 0 6px grey;
-          color: white;
-          padding: 8px;
-          font-size: 16px;
-          cursor: pointer;
-          border: none;
-          background-color: black;
-          }
-          .dropbtn2
-          {
-            box-shadow: 0 6px grey;
-            color: white;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            transition: width 0.5s;
-            background-color: black;
-            }
-      .con
-      {
-        position: absolute;
-        display: none;
-        background-color: black;
-      }
-
-      .con a
-      {
-        color: white;
-        display: block;
-        text-decoration: none;
-        min-width: 160px;
-        padding: 12px 16px;
-        border-bottom: 10px solid white:
-      }
-      a:hover
-      {
-        background-color: green;
-      }
-      .nav
-      {
-        display: inline-block;
         position: relative;
-        background-color: blue;
+        }
+      .mydiv
+      {
+        background-image: url('hm.jpg');
+        background-size: contain;
+        margin-left: -8px;
+        margin-top: -100px;
+        z-index: -1;
+        position: absolute;
+        width: 100%;
+        height: 5000px;
+        opacity: 0.98;
+        background-repeat: no-repeat;
+        text-align: center;
 
       }
-      .dropbtn:hover
+      .mydiv > div
       {
-        background-color: green;
+        display: none;
       }
-      .dropbtn1:active
-      {
-        box-shadow: 0 5px gray;
-        -webkit-transform:translateY(10px);
-      }
-      .nav:hover .con
+      .mydiv >div:target
       {
         display: block;
+      }
+      .mydiv >div:target .mydiv>h1
+      {
+        display: none;
+      }
+
+      h1
+      {
+        font-family:'Poiret One', cursive;
+        font-size: 60px;
+        color: black;
+        position: absolute;
+        top: 60vh;
+        left: 60vh;
+        text-shadow: 5px 20px 10px gray;
+
       }
       nav
       {
-
-        box-shadow: 10px 10px 5px grey;
-        border-radius: 15px 15px  15px 15px;
-        display: block;
-        width: 100%;
-        margin: 10px;
-        background-color: black;
-      }
-      h1
-      {
-
         text-align: center;
-        color: white;
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        font-size: 20px;
+        z-index: 1;
+        font-weight: bolder;
+        border-bottom: 2px solid lightgray;
       }
-      .card
+      nav ul li
       {
-        width: 250px;
-        text-align: center;
-        box-shadow: 0 4px 5px 0 grey, 0 6px 20px 0 grey;
         display: inline-block;
-      }
-      @media screen and (min-width:480px)
-      {
-          body
-          {
-            background-image: url();
-            background-color: green;
-          }
-      }
-      .text
-      {
         padding: 10px;
+        border-radius: 35px 0;
+        font-family:'Orbitron', sans-serif;
+        cursor: pointer;
+        color: white;
       }
 
-  .anim
-  {
-    width: 100px;
-    height: 100px;
-    position: relative;
-    background-color: black;
-    -webkit-animation-name:myanim;
-    -webkit-animation:myanim 5s 3 alternate;
-
-  }
-  .dropbtn2:hover span
-  {
-    padding-right:25px;
-  }
-  .dropbtn2:hover span
-  {
-  position: relative;
-  transition: 0.5s
-  }
-  .dropbtn2:hover span::after
-  {
-    content: '>>';
-    transition: 0.5s;
-    left: 20px;
-  }
-
-
-
-    </style>
-  </head>
-      <body>
-          <input type="text"  id="first" value="">
-          <input type="text"  id="sec" value="">
-          <h4 id="sum"></h4>
-
-    <div class="card">
-      <img src="back.jpg"  style="width:100%;height:300px;" alt="" />
-      <div class="text">
-        <p>
-          Description:
-        </p>
-      </div>
-    </div>
-
-      <div class="card">
-        <img src="wal.jpg" style="width:100%;height:300px" alt="" />
-        <div class="text">
-          <p>
-            Description:
-          </p>
-        </div>
-      </div>
-
-        <div class="card">
-          <img src="border.png" style="width:100%;height:300px;" alt="" />
-          <div class="text">
-            <p>
-              Description:
-            </p>
-          </div>
-        </div>
-    <nav>
-    <div class="nav" >
-        <button class="dropbtn">Dropdown1</button>
-        <div class="con">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-    </div>
-    <div class="nav">
-        <button class="dropbtn">Dropdown2</button>
-        <div class="con">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-    </div>
-    <div class="nav">
-        <button class="dropbtn">Dropdown1</button>
-        <div class="con">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-    </div>
-    <div class="nav">
-        <button class="dropbtn">Dropdown2</button>
-        <div class="con">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-    </div>
-    <div class="nav">
-        <button class="dropbtn">Dropdown1</button>
-        <div class="con">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-    </div>
-    <div class="nav">
-        <button class="dropbtn">Dropdown2</button>
-        <div class="con">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
-        </div>
-    </div>
-
-
-  </nav>
-  <button  class="dropbtn1">Clickable button</button>
-  <button  class="dropbtn2"><span>Clickable button</span></button>
-  <button  class="dropbtn1">Clickable button</button>
-
-    <img id="img" src="back.jpg" alt="" />
-    <div class="container">
-      <p class="child">
-         This is inherit margin<br>
-         This is text-align justify
-      </p>
-      <p>
-        sdjvbsjvbj
-      </p>
-          <p>
-            sdjvbsjvbj
-          </p>
-    </div>
-
-    <div class="double">
-      <p class="child">
-         This is inherit margin<br>
-         This is text-align justify
-
-      </p>
-
-    </div>
-    <div class="ridge">
-      <p class="child">
-         This is inherit margin <br>
-         This is text-align justify
-
-      </p>
-
-    </div>
-    <div class="dotted">
-      <p class="child">
-         This is inherit <br>
-         This is text-align justify
-
-      </p>
-
-    </div>
-    <div class="inset">
-      <table>
-        <thead>
-          <tr><th> Language </th><th align="left"> Rookie &nbsp;&nbsp;&nbsp; Amateur &nbsp;&nbsp;&nbsp;Pro </th></tr>
-        </thead>
-        <tbody>
-        <tr><td>HTML</td><td class="progress" align="center"><progress value="75" max="100">Amateur</progress></tr>     <tr><td>CSS</td><td align="center" class="progress"><progress value="50" max="100">Amateur</progress></td></tr>   <tr><td>Javascript</td><td align="center" class="progress"><progress value="10" max="100">Rookie/progress></td></tr>
-        </tbody>
-      </table>
-
-    </div>
-      <div class="anim">
-
-      </div>
-      <div style="background-color:black:width:100%">
-        <a data-img="img1" id="ff" href="#">First</a>
-        <a data-img="img2" id="ss" href="#">Sec</a>
-        <a data-img="img3" id="tt" href="#">Third</a>
-
-          <img src="back.jpg" id="img1" class="hide" alt="" />
-          <img src="titleIcon.ico" id="img2" class="hide" alt="" />
-          <img src="wal.jpg" id="img3" class="hide" alt="" />
-      </div>
-      <script src="myjs.js" type="text/javascript">
-      /*onload=checkage();
-      function checkage()
+      a
       {
-        if(getAge()<18)
+        text-decoration: none;
+        font-family:'Robot Mono',monospace;
+        color: white;
+      }
+
+      li:hover
+      {
+        background-color: brown;
+        opacity: 0.5;
+      }
+      .pageback
+      {
+        z-index: -1;
+        width: 100%;
+        margin-top:-60px;
+        height: 1700px;
+      }
+      span
+      {
+        padding: 5px;
+        font-size: 20px;
+        color: white;
+      }
+      .markerfor
+      {
+        float:right;
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        border:none;
+        margin-right: 10px;
+        background-image: url("for.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        border-radius: 22px;
+        top:50vh;
+      }
+      .markerback
+      {
+        background-color:transparent;
+        width: 50px;
+        height: 50px;
+        border:none;
+        margin-left: 10px;
+        border-radius: 22px;
+        background-image: url("bac.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: absolute;
+        top: 50vh;
+        left: 0;
+      }
+        .markerfor:hover
         {
-          alert("you will be redirected!!!")
-          document.location.href="w1.html";
+          background-color: brown;
+        }
+        .markerback:hover
+        {
+          background-color: brown;
+        }
+        .hexa
+        {
+          background-color: white;
+          opacity: 0.5;
+          width: 80vw;
+          z-index: 1;
+          height: 80vh;
+          box-shadow: 10px 20px 5px 0 gray;
+          position: absolute;
+          left: 200px;
+          top:180px;
+        }
+        h3
+        {
+          font-family:'Poiret One', cursive;
+          font-size: 40px;
+          color: black;
+          text-shadow: 5px 20px 8px gray;
+
+        }
+    </style>
+
+  </head>
+  <body>
+
+    <nav>
+      <ul>
+        <li onclick="gotoPage(0)"><img src="home.png" alt="" /> Home </li><span>/</span>
+        <li onclick="gotoPage(1)"><img src="student.png" alt="" /> About Me </li><span>/</span>
+        <li onclick="gotoPage(2)"><img src="skills.png" alt="" /> Skills </li><span>/</span>
+        <li onclick="gotoPage(3)"><img src="briefcase.png" alt="" /> Projects </li><span>/</span>
+        <li onclick="gotoPage(4)"><img src="contacts.png" alt="" /> Contact </li>
+      </ul>
+    </nav>
+    <div class="mydiv" id="home">
+        <button type="button" class="markerfor" onclick="forward()" name="button"></button>
+        <section class="hexa" id="hexahome">
+            <h1><# Kartik Behl ></h1>
+        </section>
+        <div id="about" class="pages">
+          <img class="pageback" src="skil.jpg" alt="" />
+          <section class="hexa">
+            <h3>About Me:</h3>
+          </section>
+          <button type="button" class="markerfor" onclick="forward()" name="button"></button>
+          <button type="button" class="markerback" onclick="backward()"  name="button"></button>
+        </div>
+
+        <div id="skills" class="pages">
+          <img class="pageback" src="proj.jpg" alt="" />
+          <section class="hexa">
+            <h3>Tech Skills:</h3>
+          </section>
+          <button type="button" class="markerfor" onclick="forward()" name="button"></button>
+          <button type="button" class="markerback" onclick="backward()"  name="button"></button>
+
+        </div>
+
+        <div id="projects" class="pages">
+          <img class="pageback" src="abt.jpg" alt="" />
+          <section class="hexa">
+              <h3>My Projects:</h3>
+          </section>
+          <button type="button" class="markerfor" onclick="forward()" name="button"></button>
+          <button type="button" class="markerback" onclick="backward()"  name="button"></button>
+
+
+        </div>
+
+        <div id="contact" class="pages">
+          <img class="pageback" src="cont.jpg" alt="" />
+          <section class="hexa">
+            <h3>Contact Me:</h3>
+          </section>
+          <button type="button" class="markerfor" onclick="forward()"  name="button"></button>
+          <button type="button" class="markerback" onclick="backward()" name="button"></button>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+      var num=0;
+      var colorAr = ["brown","green","#661aff","#99e600","gray"];
+      var divs = document.getElementsByTagName("div");
+      var lists = document.getElementsByTagName("li");
+      var hexahome = document.getElementById("hexahome");
+      lists[0].style.background=colorAr[0];
+      hexahome.style.display="block";
+      function gotoPage(pageNum)
+      {
+        num=pageNum;
+        for(var i=0;i<divs.length;i++)
+        {
+          if(i==0)
+          {
+            lists[i].style.background="";
+          }
+          else {
+            lists[i].style.background="";
+            divs[i].style.display="none";
+          }
+        }
+        if(pageNum!=0)
+        {
+          hexahome.style.display="none";
+        }
+        lists[pageNum].style.background=colorAr[pageNum];
+        divs[pageNum].style.display="block";
+
+      }
+      function forward()
+      {
+        for(var i=0;i<lists.length;i++)
+        {
+          lists[i].style.background="";
+        }
+        var cur = num;
+        num++;
+        if(num>4)
+        {
+          num=0;
+          divs[cur].style.display="none";
+          divs[0].style.display="block";
+          hexahome.style.display="block";
+          lists[0].style.background=colorAr[0];
         }
         else {
-          alert(title("kartik")+"'s "+"webpage");
+            hexahome.style.display="none";
+          divs[num].style.display="block";
+          lists[num].style.background=colorAr[num];
+          if(cur!=0)
+          divs[cur].style.display="none";
         }
       }
-      function getAge()
+      function backward()
       {
-        var age=prompt('Enter your age');
-        age=parseInt(age);
-        return age;
-      }
-
-      function title(repeat)
-      {
-        var str="";
-        for(j=repeat.length-1;j>=0;j--)
+        for(var i=0;i<lists.length;i++)
         {
-            str+=repeat.charAt(j);
+          lists[i].style.background="";
         }
-        return str;
-      }*/
-      // onload=my();
-      // function my()
-      // {
-      //   var todo = ["funding","build-app","hire","company","idea"];
-      //   var prior = [4,3,2,5,1];
-      //   var out = new Array(todo.length);
-      //   var i=0;
-      //   while(i<todo.length)
-      //   {
-      //     out[prior[i]]=todo[i];
-      //     i++;
-      //   }
-      //   alert("before priority :"+todo+"\n\nafter priority :"+out);
-      //
-      // }
-      </script>
+        var cur = num;
+        num--;
+        if(num<0)
+        {
+          hexahome.style.display="block";
+          num=0;
+          divs[0].style.display="block";
+          lists[0].style.background=colorAr[0];
+        }
+        else {
+          if(num==0)
+          {
+            hexahome.style.display="block"
+          }
+          else {
+            hexahome.style.display="none";
+          }
+          divs[cur].style.display="none";
+          lists[num].style.background=colorAr[num];
+          divs[num].style.display="block";
+        }
+      }
 
 
+        </script>
   </body>
 </html>
