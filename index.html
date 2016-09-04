@@ -2,14 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Portfolio!!</title>
+    <title>Kartik Behl</title>
     <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Vollkorn|Josefin+Slab|Vollkorn|Ubuntu|Vollkorn|Space+Mono|Raleway" rel="stylesheet">
     <style media="screen">
 
         body,html
         {
-          height: 100%;
-            background-color: black;
+          height: 100vh;
+          background-color: gray;
           margin-left: -10px;
           margin-right: -10px;
         }
@@ -154,12 +154,13 @@
         {
           width: 100%;
           position: relative;
-          margin-top: 5%;
+          margin-top: 0%;
           height: 100vh;
           background-image: url("skillbackgg3.png");
           background-repeat: no-repeat;
           background-size: cover;
           opacity: 1;
+          display: block;
           background-position: 50% 50%;
           /*background-color:gray;*/
           background-attachment: fixed;
@@ -172,11 +173,11 @@
         .top-row
         {
           left: 8%;
-          top: 30%;
+          top: 5%;
           overflow: hidden;
           display: inline-block;
-          height: 25%;
-          width: 15%;
+          height: 40%;
+          width: 25%;
           /*text-align: center;*/
           /*top: %;*/
           /*left: 30%;*/
@@ -190,8 +191,9 @@
           position: relative;
           opacity: 1;
           color: white;
+          align-items: center;
           box-shadow: 5px 10px 5px 0 black;
-          border-radius: 15%;
+          /*border-radius: 15%;*/
           /*background-image: url("java.jpg");*/
           /*background-color: white;*/
           /*background-size: cover;
@@ -226,7 +228,8 @@
         }
         .top-row:hover
         {
-          transform: scale(1.2);
+          transform: scale(1.1);
+          box-shadow: 0px 0px 0px 0px rgba(0, 0, 0,1) inset;
           /*font-size: 1.5em;*/
         }
         .top-row:hover .percent
@@ -237,8 +240,9 @@
         {
           display:none;
           position:absolute;
-          top:10%;
-          left:20%;
+          top:30%;
+          left: 40%;
+          font-size: 2em;
         }
 
 
@@ -339,7 +343,7 @@
           list-style-type: none;
           display: block;
           width: 100%;
-          text-align: center;
+          /*text-align: center;*/
           height: inherit;
           /*background-color: red;*/
           background-color: black;
@@ -357,10 +361,10 @@
           font-family: Raleway,sans-serif;
           letter-spacing:2px;
           text-transform: uppercase;
-          font-size:1.2em;
+          font-size:1em;
           position: absolute;
           /*padding-bottom: 10px;*/
-          text-align: center;
+          /*  text-align: center;*/
           margin-right: 20px;
           position: relative;
           /*left: -2%;*/
@@ -369,23 +373,32 @@
         }
         a
         {
-          font-size: 1.3em;
+          position: relative;
+          font-size: 0.8em;
           color: white;
+          padding: 9px 10px 18px 10px;
           font-style: bold;
           display: block;
           text-decoration: none;
         }
-        li:hover
+        li a.selected:hover
         {
-          border-bottom: 0px;
+          box-shadow: 0px 5px 0 0px rgba(255, 255, 255, 1) inset;
+
+
+          /*border-bottom: 0px;
             border-top:0.3vw solid white;
-          /*background-color: white;*/
-          color: black;
+          /*background-color: white;*/*/
+
           /*transform: scale(1.2);*/
         }
-        li:hover a
+        li a.disableborder
         {
-          /*color: black;*/
+          box-shadow:none;
+        }
+        li a.deselect
+        {
+          box-shadow: 0px -5px 0 0px rgba(255, 255, 255, 1) inset;
         }
 
         nav
@@ -394,8 +407,10 @@
           /*height: vh;*/
           width: 100%;
           right: 0%;
+          height: 8vh;
           bottom: 0%;
-          margin-bottom:-2.2vh;
+          /*height: 8vh;*/
+          /*margin-bottom:-2.2vh;*/
           /*background-color: black;*/
           position: fixed;
           z-index: 5;
@@ -507,6 +522,8 @@
         {
           width: 110vw;
           height: 100vh;
+          /*margin-top: -6%;*/
+          position: relative;
           background-color: gray;
 
         }
@@ -537,15 +554,7 @@
           background-attachment: fixed;
           background-position:center;
         }
-      /*.load
-        {
-          margin-top: 5px;
-          margin-left: -20px;
-          width: 120px;
-          height: 5px;
-          border: none;
-          /*background-color: black;*/
-        }*/
+
         .hire
         {
           margin-top: 10vh;
@@ -596,26 +605,36 @@
 
           opacity: 0;
           background-position: left;
-          transition: all 1s ease-in-out;
+          transition: all 0.8s ease-in-out;
           background-repeat: no-repeat;
           /*position: relative;*/
           /*background-color: gray;*/
         }
         .hobby
         {
-          width:22vh;
-          height:22vh;
+          width:22%;
+          height:22%;
           top: 5%;
           opacity: 0.5;
           left: 10%;
           margin-top: 2%;
           font-size: 1.2em;
-          margin-right: 5%;
+          position: absolute;
+          margin-right: 1%;
+          right: -100%;
+          transition: all 0.5s ease-in-out;
+          background-repeat: no-repeat;
           display: inline-block;
+          background-position: center;
           position: relative;
           box-shadow: 5px 6px 5px 0px black;
           /*smargin: 20px 20px;*/
           /*background-color: gray;*/
+        }
+        .hobbyanim
+        {
+            opacity: 0.5;
+            right: 0%;
         }
         .headingDiv1
         {
@@ -629,9 +648,10 @@
           background-color: transparent;
           background-size: cover;
           right: -20%;
+          float: right;
           opacity: 0;
           background-position: left;
-          transition: all 1s 0.8s ease-in-out;
+          transition: all 1s ease-in-out;
           background-repeat: no-repeat;
           /*position: relative;*/
           /*background-color: gray;*/
@@ -639,40 +659,42 @@
         .headingDiv2
         {
           width:20vw;
-          height: 60vh;
-          display: inline-block;
-          position: relative;
+          height:60%;
+          /*display: inline-block;*/
+          position: absolute;
+          top: 20%;
           font-size: 2.5em;
-          top: 18%;
+          /*top: 30%;*/
           background-image: url("arre.png");
-          background-color: transparent;
-          background-size: cover;
+        /*background-color: red;*/
+            background-size: cover;
           left: -20%;
+          /*transform:rotate(180deg);*/
           opacity: 0;
           /*background-color: red;*/
-          background-position: left;
-          transition: all 1s 2s ease-in-out;
+          /*background-position: left;*/
+          transition: all 0.8s ease-in-out;
           background-repeat: no-repeat;
           /*position: relative;*/
           /*background-color: gray;*/
         }
         .headingDiv3
         {
-          width:20vw;
+          width:25%;
           height: 80%;
           display: inline-block;
           position: relative;
           font-size: 2.5em;
           background-image: url("arredark.png");
-          background-color: transparent;
+          /*background-color: red;*/
           background-size: cover;
-          right: -5vw;
+          /*right: vw;*/
           top:10%;
           /*background-color: red;*/
           float: right;
           opacity: 0;
           background-position: left;
-          transition: all 1s 3s ease-in-out;
+          transition: all 0.8s ease-in-out;
           background-repeat: no-repeat;
           /*position: relative;*/
           /*background-color: gray;*/
@@ -698,13 +720,15 @@
           left: 0%;
           /*left:1000px;*/
         }
+
         .animateHeading1
         {
           opacity: 1;
           right:0%;
-          float: right;
+          /*float: right;*/
 
         }
+
         .animateHeading2
         {
           opacity: 1;
@@ -714,7 +738,7 @@
         .animateHeading3
         {
           opacity: 1;
-          right: 5vw;
+          /*right: 2vw;*/
           /*left:1000px;*/
         }
         .animatePara
@@ -728,16 +752,23 @@
           transform: translate(0px);
         }*/
 
+
         @media only screen and (min-width:1200px ) and (max-width:2000px) and (-webkit-min-device-pixel-ratio:1)
         {
-
+          body
+          {
+            background-color: gray;
+          }
+            .mobile
+            {
+              display: none;
+            }
                   ul
                   {
                     list-style-type: none;
                     display: block;
                     width: 100%;
                     text-align: center;
-                    height: inherit;
                     /*background-color: red;*/
                     background-color: black;
                     /*position: relative;*/
@@ -767,22 +798,19 @@
                   a
                   {
                     color: white;
+                    font-size: 1.2em;
                     font-style: bold;
                     display: block;
+                    padding: 10px 10px 25px 10px;
                     text-decoration: none;
+                    box-shadow: none;
+                    transition: all 0.7s ease-in-out;
                   }
-                  li:hover
+                  nav ul li a.selected:hover
                   {
-                    border-bottom: 0px;
-                      border-top:0.3vw solid white;
-                    /*background-color: white;*/
-                    color: black;
-                    /*transform: scale(1.2);*/
+                    box-shadow: 0px 5px 0 0px rgba(255, 255, 255, 1) inset;
                   }
-                  li:hover a
-                  {
-                    /*color: black;*/
-                  }
+
 
                   nav
                   {
@@ -790,7 +818,9 @@
                     /*height: vh;*/
                     width: 100%;
                     right: 0%;
-                    margin-bottom: -2.2vh;
+                    height:8vh;
+                    background-color: black
+                    /*margin-bottom: -2.2vh;*/
                     bottom: 0%;
                     /*background-color: black;*/
                     position: fixed;
@@ -848,9 +878,10 @@
         }
         .favorites
         {
-          margin-left: 10%;
-            background-color:gray;
-            width:80%;
+            margin-left: 20%;
+            /*background-color:gray;*/
+            width:60%;
+            margin-top: 5%;
             height: 60vh;
         }
         .info
@@ -879,8 +910,7 @@
         {
           display: block;
         }
-        wrapper {
-          top: 50%;
+        wrapper1 {
     width: 1vh;
     height: 1vh;
     z-index: 2;
@@ -890,15 +920,18 @@
     }
 
     .circle {
+    position: absolute;
     width: 20vh;
     height: 20vh;
+    top: 20%;
+    left: 20%;
     border: 1vh solid cyan;
 
     border-radius: 50%;
     position: absolute;
     clip: rect(0px, 10vh, 22vh, 0px);
     }
-    div[data-anim~=base] {
+    div[data-anim~=base1] {
       animation-iteration-count: 1;
 
       animation-fill-mode: forwards;
@@ -911,30 +944,30 @@
       -moz-animation-timing-function:ease-in-out;
     }
 
-    .wrapper[data-anim~=wrapper] {
+    .wrapper[data-anim~=wrapper1] {
         animation-duration: 0.01s;
         animation-delay: 1s;
         animation-name: close-wrapper;
         -moz-animation-duration: 0.01s;
           -moz-nimation-delay: 1s;
-          -moz-animation-name: close-wrapper;
+          -moz-animation-name: close-wrapper0;
     }
 
-    .circle[data-anim~=left] {
+    .circle[data-anim~=left1] {
     animation-duration: 3s;
-    animation-name: left-spin;
+    animation-name: left-spin0;
       -moz-animation-duration: 3s;
-      -moz-animation-name: left-spin;
+      -moz-animation-name: left-spin0;
     }
 
-    .circle[data-anim~=right] {
+    .circle[data-anim~=right1] {
       animation-duration: 1.5s;
-      animation-name: right-spin;
+      animation-name: right-spin0;
       -moz-animation-duration: 1.5s;
-      -moz-animation-name: right-spin;
+      -moz-animation-name: right-spin0;
     }
 
-    @-webkit-keyframes right-spin {
+    @-webkit-keyframes right-spin0 {
       from {
         -webkit-transform: rotate(0deg);
       }
@@ -943,7 +976,7 @@
       }
     }
 
-    @-webkit-keyframes left-spin {
+    @-webkit-keyframes left-spin0 {
       from {
         -webkit-transform: rotate(0deg);
       }
@@ -952,12 +985,12 @@
       }
     }
 
-    @-webkit-keyframes close-wrapper {
+    @-webkit-keyframes close-wrapper0 {
       to {
         clip: rect(auto, auto, auto, auto);
       }
     }
-    @-moz-keyframes right-spin {
+    @-moz-keyframes right-spin0 {
       from {
         -moz-transform: rotate(0deg);
       }
@@ -966,7 +999,7 @@
       }
     }
 
-    @-moz-keyframes left-spin {
+    @-moz-keyframes left-spin0 {
       from {
         -moz-transform: rotate(0deg);
       }
@@ -975,14 +1008,14 @@
       }
     }
 
-    @-moz-keyframes close-wrapper {
+    @-moz-keyframes close-wrapper0 {
       to {
         clip: rect(auto, auto, auto, auto);
       }
     }
     wrapper2 {
       text-align: center;
-      top: 50%;
+      /*top: 50%;*/
 width: 1vh;
 height: 1vh;
 z-index: 2;
@@ -993,6 +1026,8 @@ clip: rect(0px, 3vh, 3vh, 1.5vh);
 
 .circle2 {
 width: 20vh;
+top: 20%;
+left: 20%;
 height: 20vh;
 border: 1vh solid cyan;
 
@@ -1078,7 +1113,7 @@ div[data-anim~=base2] {
 }
     wrapper3 {
       text-align: center;
-      top: 50%;
+      /*top: 50%;*/
 width: 1vh;
 height: 1vh;
 z-index: 2;
@@ -1087,6 +1122,8 @@ clip: rect(0px, 3vh, 3vh, 1.5vh);
 }
 
 .circle3 {
+  top: 20%;
+  left: 20%;
 width: 20vh;
 height: 20vh;
 border: 1vh solid cyan;
@@ -1173,7 +1210,7 @@ div[data-anim~=base3] {
 }
 wrapper4 {
   text-align: center;
-  top: 50%;
+  /*top: 50%;*/
 width: 1vh;
 height: 1vh;
 z-index: 2;
@@ -1182,6 +1219,8 @@ position: absolute;
 clip: rect(0px, 3vh, 3vh, 1.5vh);
 }
 .circle4 {
+  top: 20%;
+  left: 20%;
 width: 20vh;
 height: 20vh;
 border: 1vh solid cyan;
@@ -1273,7 +1312,7 @@ clip: rect(auto, auto, auto, auto);
 }
 wrapper5 {
   text-align: center;
-  top: 50%;
+  /*top: 50%;*/
 width: 1vh;
 height: 1vh;
 z-index: 2;
@@ -1283,6 +1322,8 @@ clip: rect(0px, 3vh, 3vh, 1.5vh);
 }
 
 .circle5 {
+  top: 20%;
+  left: 20%;
 width: 20vh;
 height: 20vh;
 border: 1vh solid cyan;
@@ -1380,7 +1421,7 @@ clip: rect(auto, auto, auto, auto);
   position: relative;
   left: -100%;
   opacity: 0;
-  transition: all 2.2s ease-in-out;
+  transition: all 1.2s ease-in-out;
   display:inline-block;
 }
 .skilAnim
@@ -1389,18 +1430,100 @@ clip: rect(auto, auto, auto, auto);
   left: 0%;
 
 }
+.mobile
+{
+  width: 110vw;
+  height: 100vh;
+  position: relative;
+  z-index: 5;
+  background-image: url("backmobile.png");
+  /*background-color: red;*/
+  background-repeat: repeat;
+  display: none;
+}
+.mobile h3
+{
+  position: absolute;
+  top: 60%;
+  margin-left:-40%;
+  left: 50%;
+  font-size: 3em;
+}
+.mobLogo
+{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  margin-left: -25vw;
+  background-image: url("loader13.gif");
+  width: 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 50%;
+}
+@media screen and (max-width:1199px) and (orientation:portrait) {
+
+body
+{
+  background-color: #7db3a7;
+}
+    .mobile {
+      display: block;
+    }
+    nav
+    {
+      display: none;
+    }
+    .content
+    {
+      display: none;
+    }
+}
+@media screen and (max-width:1199px) and (orientation:landscape) {
+  .mobLogo
+  {
+    margin-left: -20vw;
+  }
+  body
+  {
+    background-color:#7db3a7;
+  }
+    .mobile {
+      display: block;
+    }
+    nav
+    {
+      display: none;
+    }
+    .content
+    {
+      display: none;
+    }
+}
+
+
+
         </style>
   </head>
-  <body onload="ready()">
+  <body >
+
+
     <nav>
       <ul>
-        <li style="border-bottom: 0.3vw solid white;"><a href="#">Home</a> <div class="load"></div></li>
-        <li><a href="#" >About</a> <div class="load"></div></li>
-        <li><a href="#">Skills</a><div class="load"></div></li>
-        <li><a href="#" >Work</a><div class="load"></div></li>
-        <li><a href="#">Contact</a><div class="load" ></div></li>
+        <li><a href="#home"  class="selected" ><b style="position:relative;top:1vh;">Home</b></a> </li>
+        <li><a href="#about"    class="selected"><b style="position:relative;top:1vh;">About</b></a></li>
+        <li><a href="#skills"  class="selected"><b style="position:relative;top:1vh;">Skills</b></a></li>
+        <li><a href="#work"  class="selected"><b style="position:relative;top:1vh;">Work</b></a></li>
+        <li><a href="#contact"   class="selected"><b style="position:relative;top:1vh;">Contact</b></a></div></li>
       </ul>
     </nav>
+    <div class="mobile">
+      <div class="mobLogo">
+
+      </div>
+        <h3>Sorry This Website is not meant to be viewed on Mobiles/tablets</h3>
+    </div>
+
     <section class="content">
 
     <div class="bg1" id="home">
@@ -1411,7 +1534,6 @@ clip: rect(auto, auto, auto, auto);
         </div>
         <div class="background1">
         </div>
-
         <div class="foreground">
         </div>
 
@@ -1481,7 +1603,7 @@ clip: rect(auto, auto, auto, auto);
       <div class="skilCon">
 
       <div class="top-row">
-        <div class="wrapper" data-anim="">
+        <div class="wrapper1" data-anim="">
       <div class="circle" data-anim=""></div>
       <div class="circle" data-anim=""></div>
       <i class="percent">90%</i>
@@ -1540,10 +1662,10 @@ clip: rect(auto, auto, auto, auto);
 
 <div class="workDiv" id="work">
   <div class="headingDiv2" style="transform:rotate(180deg);float:left;">
-    <b style="position:absolute;left:50%;transform:rotate(180deg);margin-left:-50px;top:50%;margin-top:-10%;padding:10px 20px;font-family:Raleway,'sans-serif';letter-spacing:2px;">Work</b>
+    <b style="transform:rotate(180deg);position:absolute;left:50%;margin-left:-50px;top:50%;margin-top:-10%;padding:10px 20px;font-family:Raleway,'sans-serif';letter-spacing:2px;">Work</b>
   </div>
-  <div style="width:80vw;height:inherit;text-align:center;text-shadow:1px 2px;color:white;">
-      <p style=" position:relative;top:50%;">
+  <div style="width:60vw;height:inherit;text-align:center;text-shadow:1px 2px;color:white;">
+      <p style=" position:relative;top:50%;left:30%;">
         <b style="padding:10px 20px;border: 1px solid white;box-shadow:5px 10px 3px 0px black;">Coming Soon!!!!</b>
       </p>
   </div>
@@ -1586,7 +1708,7 @@ clip: rect(auto, auto, auto, auto);
     <b style="color:white;position:absolute;left:40%;margin-left:-80px;top:50%;margin-top:-10%;padding:10px 20px;font-family:Raleway,'sans-serif';letter-spacing:2px;">Hire Me</b>
 
   </div>
-<div style="width:50%;height:100px;display:flex;flex-direction:row;position:absolute;bottom:30%;left:40%;">
+<div style="width:50%;height:100px;display:flex;flex-direction:row;position:absolute;bottom:30%;left:30%;">
   <a  style="margin-right:50px;"href="mailto:behlkartik20@gmail.com"><div class="con" style="width:80px;height:80px;background-image:url('gmail-logo.svg');background-color:transparent;background-size:contain;background-repeat:no-repeat;margin:0 auto;box-shadow:5px 10px 3px 0 black;">
     <div class="tooltip">
         Gmail
@@ -1616,62 +1738,118 @@ clip: rect(auto, auto, auto, auto);
 
 
 </section>
-<div class="loading" style="width:100vw;height:100vh;display:block;background-image:url('loader9.gif');background-repeat:repeat-x;background-size:contain;background-position:50% 50%;">
-
-</div>
 
 
-</script>
-  <script src="animate.js" type="text/javascript">
 
-  </script>
+  <script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-        var load = document.getElementsByClassName("loading");
+    $(document).ready(function()
+    {
+      $('li>a').on('click',function (e) {
+             e.preventDefault();
+              $("body,html").animate({
+                scrollTop: $( $(this).attr('href') ).offset().top},1500);
+             $("a").each(function()
+              {
+                $(this).removeClass("deselect");
+              });
+                  $(this).addClass("disableborder");
+                  $(this).addClass("deselect");
 
-        var bd= document.getElementsByTagName("section");
-    function ready()
-      {
-        bd[0].style.display="none";
+           });
 
-        setTimeout( function()
-      {
-        bd[0].style.display="block";
-        load[0].style.display="none";
-      },1000);
-
-      }
-        window.requestAnimationFrame = window.requestAnimationFrame
-                               || window.mozRequestAnimationFrame
-                               || window.webkitRequestAnimationFrame
-                               || window.msRequestAnimationFrame
-                               || function(f){setTimeout(f, 1000/70)};
-        var front = document.getElementsByClassName("foreground");
-        var back = document.getElementsByClassName("background");
-        var back1 = document.getElementsByClassName("background1");
-        var logo = document.getElementsByClassName("Logo");
-        // var prev=0,deg=0;
-        // var grid = document.getElementsByClassName("gridDiv");
-        // var fore = document.getElementsByClassName('foreskil');
-        // var skill = document.getElementsByClassName("translateDiv");
-        var scrollheight = 	document.body.scrollHeight;
-        var windowheight = window.innerHeight;
-        var grid = document.getElementsByClassName("gridDiv");
-        function parallax(){
-	var scrolltop = window.pageYOffset;
-	var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100;
+      $(document).scroll(function()
+    {
+      var scrollheight = 	document.body.scrollHeight;
+      var windowheight = window.innerHeight;
+      var grid = document.getElementsByClassName("gridDiv");
+      var front = document.getElementsByClassName("foreground");
+      var back = document.getElementsByClassName("background");
+      var back1 = document.getElementsByClassName("background1");
+  var scrolltop = window.pageYOffset;
+  var scrollamount = (scrolltop / (scrollheight-windowheight)) * 100;
   var logo = document.getElementsByClassName("Logo");
   logo[0].style.transform='translate(0px, '+scrollamount*20+'px)';
-  back[0].style.transform='translate(0px, '+scrollamount*4+'%)';
-   back1[0].style.transform='translate(0px, '+scrollamount*4+'%)';
+  back[0].style.transform='translate(0px, '+scrollamount*1.2+'%)';
+  back1[0].style.transform='translate(0px, '+scrollamount*6+'%)';
   front[0].style.transform='translate(0px, -'+scrollamount*2+'%)';
-    // var rect = logo[0].getBoundingClientRect();
-    // console.log(scrollamount+" "+rect.top);
+      var doctop = $(document).scrollTop();
+      var divTop = $('.abt').offset().top;
+      var div1Top = $('.gridDiv').offset().top;
+      var div2Top = $('.workDiv').offset().top;
+      var div3Top = $('.contact').offset().top;
+        if((doctop+500)>=divTop)
+        {
+          $('.headingDiv0').addClass("animateHeading");
+          $('.data').addClass("animatePara");
+          console.log("hi");
+        }
+        else {
+          $('.headingDiv0').removeClass("animateHeading");
+          $('.data').removeClass("animatePara");
+        }
+        if(doctop+500>=div1Top)
+        {
+          $('.headingDiv1').addClass("animateHeading1");
+          var skil = document.getElementsByClassName("skilCon");
+          skil[0].classList.add("skilAnim");
+          var toprows = skil[0].children;
+          var i=0;
+          for(var j=0;j<toprows.length;j++)
+          {
+              var num = j+1;
+              var progressChild = toprows[j].children;
+              progressChild[0].setAttribute("data-anim","base"+num+" wrapper"+num);
+              console.log(progressChild[0].children);
+              var childs = progressChild[0].children;
+              childs[0].setAttribute("data-anim","base"+num+" left"+num);
+              childs[1].setAttribute("data-anim","base"+num+" right"+num);
+              i++;
+            }
 
-}
-  window.addEventListener('scroll', function(){
-	requestAnimationFrame(parallax)
-  }, false);
+          }
+        else {
+          var skil = document.getElementsByClassName("skilCon");
+          skil[0].classList.remove("skilAnim");
+
+          var toprows = skil[0].children;
+          $('.headingDiv1').removeClass("animateHeading1");
+          for(var j=0;j<toprows.length;j++)
+          {
+          var num = j+1;
+          var progressChild = toprows[j].children;
+          progressChild[0].setAttribute("data-anim","");
+          var childs = progressChild[0].children;
+          childs[0].setAttribute("data-anim","");
+          childs[1].setAttribute("data-anim","");
+        }
+      }
+        if(doctop+500>=div2Top)
+        {
+          $('.headingDiv2').addClass("animateHeading");
+
+        }
+        else {
+          $('.headingDiv2').removeClass("animateHeading");
+
+        }
+        if(doctop+600>=div3Top)
+        {
+          $('.headingDiv3').addClass("animateHeading");
+        }
+        else {
+          $('.headingDiv3').removeClass("animateHeading");
+
+        }
+      });
+    });
+    // $(function(){
+    //
+    //
+    //
+    //
+    // });
   // logo[0].style.WebkitTransform ='translate(0px, '+scrollamount/2+'%)';
   // logo[0].style.transform='translate(0px, '+winScroll/2+'%)';
   // back[0].style.transform='translate(0px, '+winScroll/4+'%)';
