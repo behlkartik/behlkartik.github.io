@@ -8,9 +8,10 @@
 
         body,html
         {
-          height: 100vh;
-          background-color: gray;
+          /*height: 100vh;*/
+          /*background-color: gray;*/
           margin-left: -10px;
+          font: normal 'Raleway', Arial, Helvetica, sans-serif;
           margin-right: -10px;
         }
         body
@@ -18,6 +19,20 @@
 
           overflow-x: hidden;
         }
+
+        .h3h{
+            font-size:1.3em;
+            text-align:center;
+            margin-left:10%;
+        }
+
+        .hrs{
+           height:0.5vh;
+           width:80%;
+           margin-left:10%;
+           background-color:white;
+        }
+
         .bg1
         {
           background-image: url("backanim1.gif");
@@ -133,6 +148,13 @@
           /*right: 20vh;*/
           background-image: url("foregg.png");
 
+        }
+        .logoText
+        {
+          background-color:black;
+          width:10vw;
+          text-align:center;
+          margin-left:-50%;
         }
 
         .Logo
@@ -345,6 +367,7 @@
           width: 100%;
           /*text-align: center;*/
           height: inherit;
+          margin-top: 0;
           /*background-color: red;*/
           background-color: black;
           position: relative;
@@ -753,129 +776,6 @@
         }*/
 
 
-        @media only screen and (min-width:1200px ) and (max-width:2000px) and (-webkit-min-device-pixel-ratio:1)
-        {
-          body
-          {
-            background-color: gray;
-          }
-            .mobile
-            {
-              display: none;
-            }
-                  ul
-                  {
-                    list-style-type: none;
-                    display: block;
-                    width: 100%;
-                    text-align: center;
-                    /*background-color: red;*/
-                    background-color: black;
-                    /*position: relative;*/
-                  }
-                  .ulnav
-                  {
-                    background-color: rgba(220, 220, 220, 1);
-                    box-shadow: 10px 10px 5px 0 gray;
-                  }
-                  li
-                  {
-
-                    /*border-bottom: 0.3vw solid white;*/
-                    font-family: Raleway,sans-serif;
-                    letter-spacing:2px;
-                    text-transform: uppercase;
-                    font-size:1em;
-                    position: absolute;
-                    /*padding-bottom: 10px;*/
-                    text-align: center;
-                    margin-right: 20px;
-                    position: relative;
-                    /*left: -2%;*/
-                    font-weight: bolder;
-                    display: inline-block;
-                  }
-                  a
-                  {
-                    color: white;
-                    font-size: 1.2em;
-                    font-style: bold;
-                    display: block;
-                    padding: 10px 10px 25px 10px;
-                    text-decoration: none;
-                    box-shadow: none;
-                    transition: all 0.7s ease-in-out;
-                  }
-                  nav ul li a.selected:hover
-                  {
-                    box-shadow: 0px 5px 0 0px rgba(255, 255, 255, 1) inset;
-                  }
-
-
-                  nav
-                  {
-                    text-align: center;
-                    /*height: vh;*/
-                    width: 100%;
-                    right: 0%;
-                    height:8vh;
-                    background-color: black
-                    /*margin-bottom: -2.2vh;*/
-                    bottom: 0%;
-                    /*background-color: black;*/
-                    position: fixed;
-                    z-index: 5;
-                  }
-
-          .landingEle
-          {
-            width: 100vw;
-            height: 600px;
-            position: relative;
-            left: 0%;
-            display: flex;
-            background-color: black;
-            flex-direction: row;
-            margin-top: 0px;
-          }
-
-                  .post1
-                  {
-                    width:30%;
-                    /*height: 500px;*/
-                    border: 1px solid gray;
-                    margin: 10px 10px 0px;
-                    text-align: center;
-                    background-color: black;
-                    display: inline-block;
-                    transform: translate(100px,20px);
-                  }
-                  .post2
-                  {
-                    width:30%;
-                    /*height: 500px;*/
-                    border: 1px solid gray;
-                    margin: 10px 10px 0px;
-                    text-align: center;
-                    background-color: black;
-                    display: inline-block;
-                  z-index: 2;
-                  }
-                  .post3
-                  {
-                    width:30%;
-                    /*height: 500px;*/
-                    border: 1px solid gray;
-                    margin: 10px 10px 0px;
-                    text-align: center;
-                    background-color: black;
-                    display: inline-block;
-                    transform: translate(-100px,20px);
-                  }
-
-
-
-        }
         .favorites
         {
             margin-left: 20%;
@@ -926,7 +826,6 @@
     top: 20%;
     left: 20%;
     border: 1vh solid cyan;
-
     border-radius: 50%;
     position: absolute;
     clip: rect(0px, 10vh, 22vh, 0px);
@@ -1430,78 +1329,759 @@ clip: rect(auto, auto, auto, auto);
   left: 0%;
 
 }
-.mobile
+#x
 {
-  width: 110vw;
-  height: 100vh;
-  position: relative;
-  z-index: 5;
-  background-image: url("backmobile.png");
-  /*background-color: red;*/
-  background-repeat: repeat;
   display: none;
 }
-.mobile h3
+.menu
 {
+  height: 6vh;
+  text-align: center;
   position: absolute;
-  top: 60%;
-  margin-left:-40%;
-  left: 50%;
-  font-size: 3em;
+  font-size: 3vh;
+  bottom: 0%;
+  font-weight: normal;
+  z-index: 8888;
+  margin: 0;
+  position: fixed;
+  display: none;
 }
-.mobLogo
+
+
+@media only screen and (min-width:1200px ) and (max-width:2000px) and (-webkit-min-device-pixel-ratio:1)
+       {
+         #x
+         {
+           display: none;
+         }
+         .menu
+         {
+           display: none;
+         }
+         body
+         {
+           background-color: gray;
+         }
+           .mobile
+           {
+             display: none;
+           }
+                 ul
+                 {
+                   list-style-type: none;
+                   display: block;
+                   width: 100%;
+                   text-align: center;
+                   /*background-color: red;*/
+                   background-color: black;
+                   /*position: relative;*/
+                 }
+                 .ulnav
+                 {
+                   background-color: rgba(220, 220, 220, 1);
+                   box-shadow: 10px 10px 5px 0 gray;
+                 }
+                 li
+                 {
+
+                   /*border-bottom: 0.3vw solid white;*/
+                   font-family: Raleway,sans-serif;
+                   letter-spacing:2px;
+                   text-transform: uppercase;
+                   font-size:1em;
+                   position: absolute;
+                   /*padding-bottom: 10px;*/
+                   text-align: center;
+                   margin-right: 20px;
+                   position: relative;
+                   /*left: -2%;*/
+                   font-weight: bolder;
+                   display: inline-block;
+                 }
+                 a
+                 {
+                   color: white;
+                   font-size: 1.2em;
+                   font-style: bold;
+                   display: block;
+                   padding: 10px 10px 25px 10px;
+                   text-decoration: none;
+                   box-shadow: none;
+                   transition: all 0.7s ease-in-out;
+                 }
+                 nav ul li a.selected:hover
+                 {
+                   box-shadow: 0px 5px 0 0px rgba(255, 255, 255, 1) inset;
+                 }
+
+
+                 nav
+                 {
+                   text-align: center;
+                   /*height: vh;*/
+                   width: 100%;
+                   right: 0%;
+                   height:8vh;
+                   background-color: black
+                   /*margin-bottom: -2.2vh;*/
+                   bottom: 0%;
+                   /*background-color: black;*/
+                   position: fixed;
+                   z-index: 5;
+                 }
+
+         .landingEle
+         {
+           width: 100vw;
+           height: 600px;
+           position: relative;
+           left: 0%;
+           display: flex;
+           background-color: black;
+           flex-direction: row;
+           margin-top: 0px;
+         }
+
+                 .post1
+                 {
+                   width:30%;
+                   /*height: 500px;*/
+                   border: 1px solid gray;
+                   margin: 10px 10px 0px;
+                   text-align: center;
+                   background-color: black;
+                   display: inline-block;
+                   transform: translate(100px,20px);
+                 }
+                 .post2
+                 {
+                   width:30%;
+                   /*height: 500px;*/
+                   border: 1px solid gray;
+                   margin: 10px 10px 0px;
+                   text-align: center;
+                   background-color: black;
+                   display: inline-block;
+                 z-index: 2;
+                 }
+                 .post3
+                 {
+                   width:30%;
+                   /*height: 500px;*/
+                   border: 1px solid gray;
+                   margin: 10px 10px 0px;
+                   text-align: center;
+                   background-color: black;
+                   display: inline-block;
+                   transform: translate(-100px,20px);
+                 }
+
+
+
+       }
+
+       /*Potrait screen*/
+
+@media only screen and (max-width:1199px)
 {
-  position: absolute;
-  top: 10%;
-  left: 50%;
-  margin-left: -25vw;
-  background-image: url("loader13.gif");
-  width: 50%;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 50%;
+  wrapper1 {
+width: 1vh;
+height: 1vh;
+z-index: 2;
+position: absolute;
+clip: rect(0px, 3vh, 3vh, 1.5vh);
 }
-@media screen and (max-width:1199px) and (orientation:portrait) {
 
-body
+
+  @-webkit-keyframes right-spin0 {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(180deg);
+    }
+  }
+
+  @-webkit-keyframes left-spin0 {
+    from {
+      -webkit-transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(300deg);
+    }
+  }
+
+  @-webkit-keyframes close-wrapper0 {
+    to {
+      clip: rect(auto, auto, auto, auto);
+    }
+  }
+  @-moz-keyframes right-spin0 {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+    to {
+      -moz-transform: rotate(180deg);
+    }
+  }
+
+  @-moz-keyframes left-spin0 {
+    from {
+      -moz-transform: rotate(0deg);
+    }
+    to {
+      -moz-transform: rotate(300deg);
+    }
+  }
+
+  @-moz-keyframes close-wrapper0 {
+    to {
+      clip: rect(auto, auto, auto, auto);
+    }
+  }
+  .skilCon
+  {
+    width:70%;
+    height:inherit;
+    float:left;
+    margin-top: -2%;
+    position: relative;
+    left: -100%;
+    opacity: 0;
+    text-align: center;
+    transition: all 1.2s ease-in-out;
+    display:inline-block;
+  }
+  .skilAnim
+  {
+    opacity: 1;
+    left: 0%;
+
+  }
+  .gridDiv
+  {
+    width: 100%;
+    position: relative;
+    margin-top: 0%;
+    height: 100vh;
+    background-image: url("skillbackgg3.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    display: block;
+    background-position: 50% 50%;
+    /*background-color:gray;*/
+    background-attachment: fixed;
+  }
+  .gridAnim
+  {
+    opacity: 1;
+
+  }
+  .top-row
+  {
+    left: 8%;
+    top: 5%;
+    overflow: hidden;
+    display: inline-block;
+    height: 40%;
+    width: 25%;
+    /*text-align: center;*/
+    /*top: %;*/
+    /*left: 30%;*/
+    /*margin-left: -80px;*/
+    /*margin-right: 30px;*/
+    margin-left: 20px;
+    /*background-color:green;*/
+    margin-top: 5px;
+    /*margin-top: -50px;*/
+    /*margin-right: 20px;*/
+    positi  on: relative;
+    opacity: 1;
+    color: white;
+    align-items: center;
+    box-shadow: 5px 10px 5px 0 black;
+    /*border-radius: 15%;*/
+    /*background-image: url("java.jpg");*/
+    /*background-color: white;*/
+    /*background-size: cover;
+    background-position: center;
+    /*transform: translateX(-20px);*/*/
+    transform: scale(1);
+    /*border-radius: 20%;*/
+    /*transition: all 3s 0s ease-in-out;*/
+  }
+  .abt{
+     min-height:100vh;
+  }
+
+  .h3h{
+     /*margin-left: -7vw;*/
+
+  }
+  .hrs{
+    /*margin-left: -7vw;*/
+  }
+  .headingDiv0
+  {
+    width:30vw;
+    height: 20vh;
+    display: inline-block;
+    position: relative;
+    font-size: 2em;
+    background-image: url("arre.png");
+    background-color: transparent;
+    background-size: cover;
+    left: 0%;
+    top: 10%;
+    opacity: 1;
+    background-position: left;
+    transition: all 0.8s ease-in-out;
+    background-repeat: no-repeat;
+    /*position: relative;*/
+    /*background-color: gray;*/
+  }
+
+  .hobbyanim
+  {
+      opacity: 0.5;
+      right: 0%;
+  }
+  .headingDiv1
+  {
+
+    width:30vw;
+    height: 20vh;
+    display: inline-block;
+    position: relative;
+    font-size: 2.2em;
+    background-image: url("arre.png");
+    /*background-color: red;*/
+    background-size: cover;
+    /*left: 0%;*/
+    top: 10%;
+    float:right;
+    right: -5%;
+    opacity: 1;
+    background-position: left;
+    transition: all 0.8s ease-in-out;
+    background-repeat: no-repeat;
+
+    /*
+    width:20vw;
+    height: 60vh;
+    display: inline-block;
+    position: relative;
+    font-size: 2.5em;
+    margin-top: 5%;
+    background-image: url("arrecy.png");
+    background-color: transparent;
+    background-size: cover;
+    right: -20%;
+    float: right;
+    opacity: 0;
+    background-position: left;
+    transition: all 1s ease-in-out;
+    background-repeat: no-repeat;*/
+    /*position: relative;*/
+    /*background-color: gray;*/
+  }
+  .headingDiv2
+  {
+    width:30vw;
+    height:20vh;
+    /*display: inline-block;*/
+    position: relative;
+    top: 20%;
+    font-size: 2.5em;
+    /*top: 30%;*/
+    background-image: url("arre.png");
+  /*background-color: red;*/
+      background-size: cover;
+      background-position: center;
+    /*left: 0%;*/
+    /*transform:rotate(180deg);*/
+    opacity: 1;
+    /*background-color: red;*/
+    /*background-position: left;*/
+    /*transition: all 0.8s ease-in-out;*/
+    background-repeat: no-repeat;
+    /*position: relative;*/
+    /*background-color: gray;*/
+  }
+  .headingDiv3
+  {
+    width:30vw;
+    height: 20vh;
+    display: inline-block;
+    position: relative;
+    font-size: 2.2em;
+    background-image: url("arredark.png");
+    /*background-color: red;*/
+    background-size: cover;
+    /*right: vw;*/
+    top:10%;
+    /*background-color: red;*/
+    float: right;
+    opacity: 1;
+    transition: all 0.8s ease-in-out;
+    background-repeat: no-repeat;
+    /*position: relative;*/
+    /*background-color: gray;*/
+  }
+
+  .top-row{
+    /*width: 40%;*/
+  width:20vh;
+  height:10vh;
+  padding:2vh;
+  /*background:red;*/
+  margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+  }
+  .gridDiv{
+    min-height: 100vh;
+
+  }
+
+  .circle{
+    height:10vh;
+    width:10vh;
+    /*background-color: white;*/
+    margin:-6% 5%;
+    border: 1vh solid cyan;
+    border-radius: 50%;
+    position: absolute;
+    clip: rect(0px, 5vh, 12vh, 0px);
+
+  }
+  .circle1{
+    height:10vh;
+    width:10vh;
+    /*background-color: white;*/
+    margin:-6% 5%;
+    border: 1vh solid cyan;
+    border-radius: 50%;
+    position: absolute;
+    clip: rect(0px, 5vh, 12vh, 0px);
+
+  }
+  .circle2{
+    height:10vh;
+    width:10vh;
+    /*background-color: white;*/
+    margin:-6% 5%;
+    border: 1vh solid cyan;
+    border-radius: 50%;
+    position: absolute;
+    clip: rect(0px, 5vh, 12vh, 0px);
+
+  }
+  .circle3{
+    height:10vh;
+    width:10vh;
+    /*background-color: white;*/
+    margin:-6% 5%;
+    border: 1vh solid cyan;
+    border-radius: 50%;
+    position: absolute;
+    clip: rect(0px, 5vh, 12vh, 0px);
+
+  }
+  .circle4{
+    height:10vh;
+    width:10vh;
+    /*background-color: white;*/
+    margin:-6% 5%;
+    border: 1vh solid cyan;
+    border-radius: 50%;
+    position: absolute;
+    clip: rect(0px, 5vh, 12vh, 0px);
+
+  }
+  .circle5{
+    height:10vh;
+    width:10vh;
+    /*background-color: white;*/
+    margin:-6% 5%;
+    border: 1vh solid cyan;
+    border-radius: 50%;
+    position: absolute;
+    clip: rect(0px, 5vh, 12vh, 0px);
+
+  }
+
+          .data
+          {
+            width: 100%;
+            max-height: 100vh;
+            /*right: -100%;*/
+            position: relative;
+            display: inline-block;
+            color: white;
+            /*background-color: red;*/
+            opacity: 1;
+            font-size: 1.5vh;
+            transition: all 1.2s ease-in-out;
+            /*background-color: black;*/
+          }
+
+
+          .favorites
+          {
+              /*margin-left: 20%;*/
+              /*background-color:gray;*/
+              width:100%;
+              padding: 3vh;
+              margin-left:-7vw;
+              /*background-color: gray;*/
+              /*max-height: 55vh;*/
+          }
+  .hobby
+  {
+    width:20%;
+    height:10vh;
+    opacity: 0.5;
+    left: 10%;
+    padding: 30px ;
+    /*font-size: 2em;*/
+    /*position: absolute;*/
+    /*margin-right: 8%;*/
+    right: -100%;
+    /*padding: 3vh 2.1vh;*/
+    transition: all 0.5s ease-in-out;
+    background-repeat: no-repeat;
+    display: inline-block;
+    background-position: center;
+    position: relative;
+    box-shadow: 5px 6px 5px 0px black;
+    /*smargin: 20px 20px;*/
+    /*background-color: gray;*/
+  }
+  .background
+  {
+    display: none;
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    left: 50%;
+    margin-left: -450px;
+    top: 20%;
+    background-image: url("backgg.png");
+  }
+  .background1
+  {
+    display: none;
+    width: 40vh;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: top left;
+    position: absolute;
+    /*right: 5vw;*/
+    left: 70vw;
+    top: 20%;
+    background-image: url("backgg1.png");
+  }
+
+  .foreground
+  {
+    display: none;
+    width: 30vh;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    position: absolute;
+    top: 60%;
+    left: 70vw;
+    background-size: cover;
+    /*right: 0%;
+    margin-right: 200px;*/
+    /*right: 20vh;*/
+    background-image: url("foregg.png");
+
+  }
+
+  .Logo
+  {
+    width: 30vh;
+    height: 30vh;
+    position: absolute;
+    /*background-color: black;*/
+    /*background-image: url("c++.jpg");*/
+    top: 50%;
+    left: 50%;
+    margin-left: -5%;
+    margin-top: -5%;
+    /*background-size: cover;*/
+    /*background-color: red;*/
+    background-repeat: no-repeat;
+    /*text-transform: capitalize;*/
+  }
+  .logoText
+  {
+    background-color:black;
+    width:15vh;
+    font-size: 2.5vh;
+    text-align:center;
+    margin-left:-60%;
+  }
+  .bg1
+  {
+    background-image: url("backanim1.gif");
+    background-position: center;
+    overflow: hidden;
+
+    position: relative;
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height: 100vh;
+    /*width: 100vw;;*/
+
+  }
+  .menu
+  {
+    display: block;
+  }
+  html
+  {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
+body{
+  font-size:2em;
+  background-color: gray;
+  box-sizing: border-box;
+  webkit-box-sizing: border-box;
+}
+  html{
+    /*font: normal 62.5% 'Raleway', Arial, Helvetica, sans-serif;*/
+    }
+   nav{
+     height:100% !important;
+
+     box-sizing: border-box;
+     webkit-box-sizing: border-box;
+   }
+   nav
+   {
+     display: none;
+   }
+
+   nav>ul>li{
+     display: block;
+     margin: 0;
+
+     box-sizing: border-box;
+     webkit-box-sizing: border-box;
+
+     /*font-size: 2;*/
+   }
+      nav>ul>li>a
+      {
+
+        font-size: 3vh;
+        text-align: center;
+        /*padding: 50px 0 !important;*/
+        /*font-size-adjust:0.58;*/
+        line-height: 15vh;
+        box-sizing: border-box;
+        webkit-box-sizing: border-box;
+      }
+      #x
+      {
+        display: block;
+      }
+
+
+}
+@media only screen  and (max-width:1199px) and (orientation:landscape)
 {
-  background-color: #7db3a7;
-}
-    .mobile {
-      display: block;
-    }
-    nav
-    {
-      display: none;
-    }
-    .content
-    {
-      display: none;
-    }
-}
-@media screen and (max-width:1199px) and (orientation:landscape) {
-  .mobLogo
+  .abt
   {
-    margin-left: -20vw;
+    height:120vh;
+    width: 100%;
+    position: relative;
+    background-color:white;
+    font-family:Raleway,sans-serif;
+    letter-spacing:2px;
+    font-size: 2.5vh;
+    /*text-align:center;"*/
+    /*display: flex;
+    flex-direction: row;*/
+    display: flex;
+    background-color: black;
+    flex-direction: row;
   }
-  body
+  .favorites
   {
-    background-color:#7db3a7;
+      margin-left: 20%;
+      /*background-color:gray;*/
+      width:60%;
+      margin-top: 2%;
+      height: 80vh;
   }
-    .mobile {
-      display: block;
-    }
-    nav
-    {
-      display: none;
-    }
-    .content
-    {
-      display: none;
-    }
+.hobby
+{
+width:20%;
+height:20%;
+opacity: 0.5;
+left: 10%;
+margin-top: 0%;
+font-size: 2em;
+position: absolute;
+margin-right: 8%;
+right: -100%;
+transition: all 0.5s ease-in-out;
+background-repeat: no-repeat;
+display: inline-block;
+background-position: center;
+position: relative;
+box-shadow: 5px 6px 5px 0px black;
+/*smargin: 20px 20px;*/
+/*background-color: gray;*/
 }
+  .logoText
+  {
+    background-color:black;
+    width:15vh;
+    font-size: 100%;
+    text-align:center;
+    margin-left:-60%;
+  }
+  #x
+  {
+    font-size: 8vh;
+  }
+  .menu
+  {
+    height:8vh;
+    text-align: center;
+    position: absolute;
+    font-size: 3vh;
+    bottom: 0%;
+    font-weight: normal;
+    z-index: 8888;
+    margin: 0;
+    position: fixed;
+    display: block;
+  }
 
-
+  nav>ul>li>a
+  {
+    font-size: 5.5vh;
+    text-align: center;
+    /*padding: 50px 0 !important;*/
+    /*font-size-adjust:0.58;*/
+    line-height: 12vh;
+    box-sizing: border-box;
+    webkit-box-sizing: border-box;
+  }
+}
 
         </style>
   </head>
@@ -1509,26 +2089,27 @@ body
 
 
     <nav>
+
       <ul>
+        <!-- <li><a href="#menu"   class="selected"><b style="position:relative;top:1vh;font-size:6vh">Menu</b></a></li> -->
         <li><a href="#home"  class="selected" ><b style="position:relative;top:1vh;">Home</b></a> </li>
         <li><a href="#about"    class="selected"><b style="position:relative;top:1vh;">About</b></a></li>
         <li><a href="#skills"  class="selected"><b style="position:relative;top:1vh;">Skills</b></a></li>
         <li><a href="#work"  class="selected"><b style="position:relative;top:1vh;">Work</b></a></li>
-        <li><a href="#contact"   class="selected"><b style="position:relative;top:1vh;">Contact</b></a></div></li>
+        <li><a href="#contact"   class="selected"><b style="position:relative;top:1vh;">Contact</b></a></li>
+        <li id="x"><a class="selected"><b style="position:relative;top:1vh;font-size:6vh">X</b></a></li>
       </ul>
-    </nav>
-    <div class="mobile">
-      <div class="mobLogo">
 
-      </div>
-        <h3>Sorry This Website is not meant to be viewed on Mobiles/tablets</h3>
-    </div>
+    </nav>
+    <ul class="menu">
+      <li style="font-size:inherit;color:white;top:1.5vh;font-style:normal;font-weight:lighter;width:50%;">Menu</li>
+    </ul>
 
     <section class="content">
 
     <div class="bg1" id="home">
         <div class="Logo">
-          <span style="background-color:black;width:10vw;text-align:center;margin-left:-50%;">Kartik Behl</span>
+          <span class="logoText">Kartik Behl</span>
         </div>
         <div class="background">
         </div>
@@ -1549,8 +2130,8 @@ body
            <br>
 
          </p>
-         <strong  style=" font-size:1.3em;text-align:center;margin-left:10%;"> Things I Like: </strong>
-          <hr style="height:0.5vh;width:80%;margin-left:10%;background-color:white;">
+         <strong  class="h3h"> Things I Like: </strong>
+          <hr class="hrs" >
          <div class="favorites">
            <div class="hobby" style="background-image:url('hobbies/coding.svg');background-size:contain;">
              <div class="info">
@@ -1746,6 +2327,20 @@ body
     <script type="text/javascript">
     $(document).ready(function()
     {
+      $('.menu').on('click',function()
+    {
+      // alert("hello")
+      $('nav').css("display","block");
+      $('#x').css("display","block");
+      $('.menu').css("display","none");
+    });
+    $('#x').on('click',function()
+  {
+    // alert("hello")
+    $('nav').css("display","none");
+    $('#x').css("display","none");
+    $('.menu').css("display","block");
+  });
       $('li>a').on('click',function (e) {
              e.preventDefault();
               $("body,html").animate({
