@@ -1,0 +1,203 @@
+.header-name {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white;
+    background-color: #fff;
+    font-family: var(--bs-font-sans-serif);
+}
+
+.socials {
+    width: 2rem;
+    height: 2rem;
+}
+
+.rounded-photo {
+    border-radius: 3rem;
+}
+
+hr {
+    border: solid #EAF6F6 0.1rem;
+    border-bottom: none;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.navbar-links {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+
+.social-list {
+    margin-bottom: 0;
+}
+
+.content {
+    background-color: #A5C9CA;
+    margin-left: 280px;
+}
+
+.about-me {
+    background-color: #395B64;
+    height: 40vh;
+}
+
+.skills {
+    height: 100vh;
+}
+
+.short-intro {
+    font-weight: lighter;
+    font-size: 0.875rem;
+}
+
+@media screen and (min-width: 992px) {
+    .fixed-nav {
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: #2C3333;
+        width: 280px;
+    }
+
+    .header-left-links {
+        text-align: start;
+    }
+
+    .about-me-pic {
+        max-width: 400px;
+        max-height: 300px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .fixed-nav {
+        position: static;
+        height: auto;
+        top: auto;
+        left: auto;
+        background-color: #2C3333;
+        width: inherit;
+    }
+
+    .header-toggler {
+        margin: auto 1.2rem;
+    }
+
+    .navbar-brand {
+        padding-top: 0.5rem;
+    }
+
+    .content {
+        margin: 0;
+        height: auto;
+    }
+
+    .header-left-links {
+        text-align: left;
+        padding-left: 1rem;
+        height: auto;
+    }
+
+    .header-name {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .about-me {
+        height: auto;
+    }
+
+    .about-me-pic {
+        max-width: 300px;
+        max-height: 250px;
+    }
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(256,256,256, 1)' stroke-width=' 3' stroke-linecap=' round' stroke-miterlimit=' 10' d=' M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.55);
+    border-radius: 0;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.svg-inline--fa {
+    height: 1rem;
+    display: inline-block;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+
+.content .about-me .about-me-title {
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
+#dark-mode-toggler {
+    background-color: #ffff;
+    border-color: #395B64;
+}
+
+#dark-mode-toggler:checked {
+    background-color: #395B64;
+    border-color: white;
+}
+
+.dark-mode {
+    display: block;
+    padding: 0;
+}
+
+.dark-mode .dark-mode-label {
+    font-size: 1rem;
+}
+
+#dark-mode-toggler {
+    border: 3px solid #ffff;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 16px;
+}
+
+.what-i-do-title::before {
+    content: "";
+    width: 5px;
+    height: 30px;
+    display: inline-block;
+    background-color: black;
+    top: 0;
+    left: 0;
+    position: relative;
+    margin-right: 10px;
+}
+
+.what-i-do-title {
+    display: flex;
+    font-weight: bold;
+}
+
+.skills-icon {
+    width: auto;
+    height: 30px;
+    margin-right: 2px;
+}

@@ -3,69 +3,404 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap Scripts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/portfolio.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;900&family=Ubuntu:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
-        rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <title>Hi, I'm Kartik Behl</title>
+    <!-- Font Awsome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
 
 <body>
-    <div class="top">
-        <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-        <h1>I'm Kartik Behl </h1>
-        <h2> a <span class="programmer">programmer </span></h2>
-        <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-        <img class="mountain" src="images/mountain.png" alt="mountain-img">
-    </div>
-    <div class="middle">
-        <img class="profile-pic" src="images/kartik.png" alt="kartik-pic">
-        <h2>Hello.</h2>
-        <p class="about-me">I am a Web and Cloud Developer. Passionate about web architecture and scalability. I love
-            video games.</p>
-    </div>
-    <hr>
-    <div class="bottom">
-        <h2>My Skills</h2>
-        <div class="skills-div">
-            <img class="designndev-img" src="images/designndev.gif" alt="design-and-dev">
-            <h3>Design and Development</h3>
-            <p>I develop Web and Cloud based applications and REST APIs using Flask, React, Databases</p>
+    <header class="fixed-nav text-center">
+        <div class="force-overflow">
+            <h1 class="navbar-brand header-name m-0 py-3" href="#">Kartik Behl</h1>
+            <div class="navbar navbar-dark header-navbar navbar-expand-lg">
+                <button class="navbar-toggler my-2 header-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse header-content flex-column" id="navbarTogglerDemo02">
+                    <div class="profile mb-2 px-2">
+                        <img class="rounded-photo mb-lg-3 " src="images/kartik.png" alt="404">
+                        <div class="my-3 short-intro">Hi I'm Kartik. I am a Software Development Engineer 3 at
+                            Rackspace. Welcome to
+                            my personal website</div>
+                        <ul class="list-inline pt-2 mx-auto social-list">
+                            <li class="list-inline-item"><a href="https://www.linkedin.com/in/kartik-behl--/"><img
+                                        src="images/linkedin.png" class="socials"></a></li>
+                            <li class="list-inline-item"><a href="https://www.github.com/behlkartik"><img
+                                        src="images/github.png" class="socials"></a></li>
+                            <li class="list-inline-item"><a href="https://www.leetcode.com/behlkartik"><img
+                                        src="images/code.png" class="socials"></a></li>
+                            <li class="list-inline-item"><a href="https://www.medium.com/behlkartik"><img
+                                        src="images/medium.png" class="socials"></a></li>
+                        </ul>
+                    </div>
+                    <hr>
+                    <ul class="navbar-nav flex-column header-left-links">
+                        <li class="nav-item mb-2">
+                            <a class="nav-link active" href=""><img src="images/about.png" class="navbar-links"><span
+                                    class="px-2">About
+                                    Me</span></a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href=""><img src="images/work.png" class="navbar-links "><span
+                                    class="px-2">Experience</span></a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href=""><img src="images/projects.png" class="navbar-links"><span
+                                    class="px-2">Projects</span></a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href=""><img src="images/resume.png" class="navbar-links"><span
+                                    class="px-2">Resume</span></a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href=""><img src="images/blog.png" class="navbar-links"><span
+                                    class="px-2">Blog
+                                    Posts</span></a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link" href=""><img src="images/contact.png" class="navbar-links"><span
+                                    class="px-2">Contact Me</span></a>
+                        </li>
+                    </ul>
+                    <hr>
+                    <div class="form-check form-switch dark-mode my-2 container">
+                        <div class="row">
+                            <h4 class="form-check-label dark-mode-label mx-auto" for="dark-mode-toggler">Dark Mode</h4>
+                            <input class="form-check-input mx-auto" type="checkbox" role="switch" id="dark-mode-toggler"
+                                checked />
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="skills-div">
-            <img class="cloudninfra-img" src="images/cloudninfra.gif" alt="cloud">
-            <h3>Cloud and Infrastructure</h3>
-            <p>I am well versed in cloud development and architecture using AWS. Experience developing and delivering
-                Serverless and Containerized applications using AWS and VMware Cloud</p>
-        </div>
-        <div class="skills-div">
-            <img class="automation-img" src="images/automation.gif" alt="automation">
-            <h3>Automation</h3>
-            <p>I have experience in automating development and Infrastructure tasks through Python, Terraform, Jenkins
-                and Shell Scripting.
-            </p>
-        </div>
+    </header>
+    <div class="content">
+        <section class="about-me p-3 p-lg-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h2>Kartik Behl</h2>
+                        <div class="about-me-title">Software Development Engineer</div>
+                        <div class="bio my-3">
+                            I'm a software engineer specialised in frontend and backend development for complex scalable
+                            web apps. I write about software development on
+                            <a href="">my blog</a>.
+                            Checkout my <a href="">portfolio</a> and <a href="">resume</a>.
+                        </div>
+                        <div class="bio-links mb-4">
+                            <a class="btn btn-dark btn-lg me-2" href="">
+                                <span> <i class="fas fa-share"></i> Portfolio</span>
+                            </a>
+                            <a class="btn btn-dark btn-lg me-2" href="">
+                                <span> <i class="fas fa-file-alt"></i> Resume</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-5">
+                        <img class="about-me-pic" src="images/profile-pic.png">
+                    </div>
+                </div>
 
+            </div>
+        </section>
+        <section class="what-i-do py-4">
+            <div class="container">
+                <h3 class="what-i-do-title my-4"> What I do </h3>
+                <div class="my-3">
+                    I have more than 4years' experience building software for clients all over the world. Below is a
+                    quick overview of my main technical skill sets and technologies I use. Want to find out more
+                    about
+                    my experience? Check out my online resume and project portfolio.
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-6 my-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/python.ico">
+                                <img class="skills-icon" src="images/flask.ico">
+                                <img class="skills-icon" src="images/django.ico">
+                            </div>
+                            <h3 class="item-title">Python, Flask & Django</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/js.ico">
+                                <img class="skills-icon" src="images/react.ico">
+                                <img class="skills-icon" src="images/nodejs.ico">
+                            </div>
+                            <h3 class="item-title">JavaScript, React, Nodejs</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/mysql.ico">
+                                <img class="skills-icon" src="images/postgres.ico">
+                                <img class="skills-icon" src="images/mongodb.ico">
+                            </div>
+                            <h3 class="item-title">MySQL, Postgres, MongoDB</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/aws.ico">
+                            </div>
+                            <h3 class="item-title">AWS</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/docker.ico">
+                                <img class="skills-icon" src="images/kubernetes.ico">
+                            </div>
+                            <h3 class="item-title">Docker and Kubernetes</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/jenkins.ico">
+                                <img class="skills-icon" src="images/githubactions.png">
+                                <img class="skills-icon" src="images/gitlab.ico">
+                            </div>
+                            <h3 class="item-title">Jenkins, Github Actions and Gitlab</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/terraform.png">
+                                <img class="skills-icon" src="images/cloudformation.ico">
+                                <img class="skills-icon" src="images/ansible.ico">
+                            </div>
+                            <h3 class="item-title">Terraform, Cloudformation, Ansible</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/poetry.png">
+                                <img class="skills-icon" src="images/pip.ico">
+                                <img class="skills-icon" src="images/npm.ico">
+                            </div>
+                            <h3 class="item-title">Poetry, pip, npm</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials py-4">
+            <div class="container">
+                <h3 class="what-i-do-title my-4"> Testimonials </h3>
+                <div class="my-3">
+                    I have more than 4years' experience building software for clients all over the world. Below is a
+                    quick overview of my main technical skill sets and technologies I use. Want to find out more
+                    about
+                    my experience? Check out my online resume and project portfolio.
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-6 my-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/python.ico">
+                                <img class="skills-icon" src="images/flask.ico">
+                                <img class="skills-icon" src="images/django.ico">
+                            </div>
+                            <h3 class="item-title">Python, Flask & Django</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/js.ico">
+                                <img class="skills-icon" src="images/react.ico">
+                                <img class="skills-icon" src="images/nodejs.ico">
+                            </div>
+                            <h3 class="item-title">JavaScript, React, Nodejs</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/mysql.ico">
+                                <img class="skills-icon" src="images/postgres.ico">
+                                <img class="skills-icon" src="images/mongodb.ico">
+                            </div>
+                            <h3 class="item-title">MySQL, Postgres, MongoDB</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/aws.ico">
+                            </div>
+                            <h3 class="item-title">AWS</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/docker.ico">
+                                <img class="skills-icon" src="images/kubernetes.ico">
+                            </div>
+                            <h3 class="item-title">Docker and Kubernetes</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6 mb-4">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/jenkins.ico">
+                                <img class="skills-icon" src="images/githubactions.png">
+                                <img class="skills-icon" src="images/gitlab.ico">
+                            </div>
+                            <h3 class="item-title">Jenkins, Github Actions and Gitlab</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/terraform.png">
+                                <img class="skills-icon" src="images/cloudformation.ico">
+                                <img class="skills-icon" src="images/ansible.ico">
+                            </div>
+                            <h3 class="item-title">Terraform, Cloudformation, Ansible</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-6">
+                        <div class="item-inner">
+                            <div class="item-icon">
+                                <img class="skills-icon" src="images/poetry.png">
+                                <img class="skills-icon" src="images/pip.ico">
+                                <img class="skills-icon" src="images/npm.ico">
+                            </div>
+                            <h3 class="item-title">Poetry, pip, npm</h3>
+                            <div class="item-desc">List skills/technologies here. You can change the icon above to
+                                any
+                                of the 1500+ <a class="theme-link" href="https://fontawesome.com/"
+                                    target="_blank">FontAwesome 5 free icons</a> available. Aenean commodo ligula
+                                eget
+                                dolor.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <hr>
-    <div class="contact-me">
-        <h2>Get In Touch</h2>
-        <h3>If you love Application Development and Infrastructure as much as I do.</h3>
-        <p class="contact-message">We can discuss more while having a beer!</p>
-        <a class="btn" href="mailto:behlkartik20@gmail.com">CONTACT ME</a>
-    </div>
-    <div class="bottom-container">
-        <a class="footer-link" href="https://www.linkedin.com/in/kartik-behl--/">LinkedIn</a>
-        <a class="footer-link" href="https://github.com/behlkartik">Github</a>
-        <a class="footer-link" href="https://www.leetcode.com/behlkartik">Leetcode</a>
-        <p class="copyright">© 2022 Kartik Behl</p>
-    </div>
+
+
+
 </body>
 
 </html>
