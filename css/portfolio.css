@@ -201,3 +201,21 @@ h2 {
     height: 30px;
     margin-right: 2px;
 }
+
+.carousel-img {
+    height: 250px;
+    width: auto;
+}
+
+.fixed-indicator {
+    position: static;
+    margin: auto;
+}
+
+.fixed-indicator>.active {
+    background-color: white !important;
+}
+
+.fixed-indicator>button {
+    background-color: #2C3333 !important;
+}
