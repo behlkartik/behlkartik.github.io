@@ -219,3 +219,7 @@ h2 {
 .fixed-indicator>button {
     background-color: #2C3333 !important;
 }
+
+html{
+    scroll-behavior: smooth;
+}
